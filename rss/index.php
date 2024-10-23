@@ -1,6 +1,6 @@
 <?php
 
-  $id = $_GET['id'];
+  // $id = $_GET['id'];
 
 	header( 'Content-Type: application/xml; charset=utf-8' );
 
@@ -12,7 +12,7 @@
 
 	$items = '';
 
-		$result = $mysqli-> query( "SELECT * FROM `" . $prefix . "subscriptions` WHERE `scraper_id`=" . $id );
+		$result = $mysqli-> query( "SELECT * FROM `" . $prefix . "subscriptions`" );
 
 		$subscriptions = array();
 
